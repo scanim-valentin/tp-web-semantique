@@ -1,0 +1,368 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#"
+     xml:base="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_genre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_genre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_joue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_joue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_nationalite -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#a_nationalite">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#personne"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#pays"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#est_realise -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#est_realise">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#realisateur"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#est_situe -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#est_situe">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#se_deroule -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#se_deroule">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#duree -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#duree">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#note -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#note">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#acteur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#acteur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#artiste"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#artiste -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#artiste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#metier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#continent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#continent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#court-metrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#court-metrage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#duree"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film">
+        <rdfs:comment xml:lang="fr">film</rdfs:comment>
+        <rdfs:comment xml:lang="fr">movie</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#genre"/>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#long-metrage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#long-metrage">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#duree"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">60</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#film"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#metier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#metier"/>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#pays -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#pays">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#personne -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#personne"/>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#realisateur -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#realisateur"/>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#ville -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#ville">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#lieu"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Berenice_Bejo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Berenice_Bejo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#acteur"/>
+        <a_genre rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#femme"/>
+        <a_joue rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#The_Artist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Europe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Europe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#continent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#France -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#France">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#pays"/>
+        <est_situe rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Europe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Jean_Dujardin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Jean_Dujardin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#acteur"/>
+        <a_genre rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#homme"/>
+        <a_joue rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#The_Artist"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Michel_Hazanavicius -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Michel_Hazanavicius">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#realisateur"/>
+        <a_genre rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#homme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Mignight_in_Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Mignight_in_Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#court-metrage"/>
+        <est_realise rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Woody_Allen"/>
+        <se_deroule rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Paris"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Paris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Paris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#ville"/>
+        <est_situe rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#France"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#The_Artist -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#The_Artist">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#long-metrage"/>
+        <a_nationalite rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#France"/>
+        <est_realise rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Michel_Hazanavicius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Woody_Allen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#Woody_Allen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#realisateur"/>
+        <a_genre rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#homme"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#femme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#femme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#genre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#homme -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#homme">
+        <rdf:type rdf:resource="http://www.semanticweb.org/guerbett/ontologies/2022/2/untitled-ontology-3#genre"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
